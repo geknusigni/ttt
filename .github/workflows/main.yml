@@ -34,7 +34,7 @@ jobs:
           # sudo warp-cli --accept-tos registration new
           # sudo warp-cli --accept-tos connect
           # sleep 3
-          # curl -s https://www.cloudflare.com/cdn-cgi/trace/
+          curl -s https://www.cloudflare.com/cdn-cgi/trace/
           curl -s https://tls.peet.ws/api/all
       
       - name: Fetch Statuses
