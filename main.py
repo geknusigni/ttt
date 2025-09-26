@@ -4,6 +4,7 @@ from datetime import datetime, timezone
 import curl_cffi
 
 r = curl_cffi.get("https://truthsocial.com/api/v1/accounts/107780257626128497/statuses", impersonate="chrome")
+print(r.text)
 data = r.json()
 
 os.makedirs("./statuses", exist_ok=True)
